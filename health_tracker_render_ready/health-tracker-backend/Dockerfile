@@ -17,4 +17,4 @@ RUN ./mvnw clean install
 EXPOSE 8080
 
 # Run the app
-CMD ["java", "-jar", "target/healthtracker.jar"]
+CMD ["java", "-jar", "target/healthtracker-0.0.1-SNAPSHOT.jar"]
