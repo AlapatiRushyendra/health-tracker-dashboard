@@ -1,10 +1,21 @@
-
 services:
   - type: web
     name: health-tracker-backend
     env: java
-    buildCommand: "./mvnw clean install"
-    startCommand: "java -jar target/healthtracker.jar"
+    buildCommand: ./mvnw clean install
+    startCommand: java -jar target/healthtracker.jar
     envVars:
+      - key: DB_HOST
+        value: dpg-cvgqp2lsvqrc73b2mvm0-a
+      - key: DB_PORT
+        value: 5432
+      - key: DB_NAME
+        value: healthtrackerdb
+      - key: DB_USER
+        value: healthtrackerdb_wpq8_user
+      - key: DB_PASSWORD
+        value: suKtlCS3RzCkDHTNSm5Ny6VgfKLf3ASA
+      - key: JAVA_HOME
+        value: /opt/render/project/.jdk
       - key: PORT
         value: 8080
